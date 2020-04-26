@@ -12,7 +12,7 @@ const NavBar = props => {
       }
       centerLogo
       id="mobile-nav"
-      menuIcon={<Icon>menu</Icon>}
+      menuIcon={null} //<Icon>menu</Icon>
       options={{
         draggable: true,
         edge: 'left',

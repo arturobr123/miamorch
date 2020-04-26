@@ -6,11 +6,17 @@ const CarouselComponent = props => {
     <Carousel
       carouselId="Carousel-2"
       images={[
-        'https://picsum.photos/200/300?image=0',
-        'https://picsum.photos/200/300?image=1',
-        'https://picsum.photos/200/300?image=2',
-        'https://picsum.photos/200/300?image=3',
-        'https://picsum.photos/200/300?image=4',
+        '/images/foto1.jpg',
+        '/images/foto2.jpg',
+        '/images/foto3.jpg',
+        '/images/foto4.jpg',
+        '/images/foto5.jpg',
+        '/images/foto6.jpg',
+        '/images/foto7.jpg',
+        '/images/foto8.jpg',
+        '/images/foto9.jpg',
+        '/images/foto10.jpg',
+        '/images/foto11.jpg',
       ]}
       options={{
         dist: -100,

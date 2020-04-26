@@ -38,3 +38,12 @@ code {
   z-index: 100;
   /* text-align: left; */
 }
+
+.removeMarginBottom {
+  margin-bottom: -30px !important;
+}
+
+.background-color-parallax-text {
+  background-color: #ee6e73;
+  opacity: 75% !important;
+}

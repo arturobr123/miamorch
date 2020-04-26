@@ -12,6 +12,7 @@ const TwoCards = props => {
           revealText="Fue muy bonito ese dia, aunque nuestra foto ps no este tan cool fue el 
           inicio que cambiaria mi vida por completo, gracias por todo mi amor."
           cardTitle="Nuestra primera foto juntos <3"
+          imageUrl="/images/primer_foto.jpg"
         />
       </Col>
 
@@ -19,6 +20,7 @@ const TwoCards = props => {
         <CardReveal
           revealText="Nuestra ultima foto hasta ahora, solo puedo decir, GRACIAS"
           cardTitle="Nuestra ultima foto juntos <3 hasta ahora..."
+          imageUrl="/images/ultima_foto.jpg"
         />
       </Col>
 

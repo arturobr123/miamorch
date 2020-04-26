@@ -12,6 +12,8 @@ import { Row, Col, CardPanel } from 'react-materialize';
 import Moment from 'react-moment';
 import 'moment-timezone';
 import moment from 'moment/min/moment-with-locales';
+import ToastSection1 from './components/ToastSection1';
+import FooterComponent from './components/FooterComponent';
 
 Moment.globalMoment = moment;
 Moment.globalLocale = 'es';
@@ -23,9 +25,9 @@ function App() {
       <SliderComponent />
 
       <CardText
-        leftSpace={3}
+        leftSpace={2}
         rightSpace={0}
-        widthCard={6}
+        widthCard={8}
         text="HOLA MI AMOR. Yo nunca he sido muy bueno para hacer manualidades,
          me encantaria poder hacerte cosas a mano, por ejemplo los dibujos en los sobres
          se que no soy muy bueno, asi que pense que podria demostrarte mi amor en algo
@@ -39,8 +41,8 @@ function App() {
         <div className="row container">
           <h2 className="header center">Tiempo juntos:</h2>
           <Row>
-            <Col s={2}></Col>
-            <Col s={8}>
+            <Col s={1}></Col>
+            <Col s={10}>
               <CardPanel className="blue">
                 <span className="white-text">
                   <h3>
@@ -60,12 +62,12 @@ function App() {
                 </span>
               </CardPanel>
             </Col>
-            <Col s={2}></Col>
+            <Col s={1}></Col>
           </Row>
         </div>
       </div>
 
-      <ParallaxImage image="http://materializecss.com/images/parallax2.jpg" />
+      <ParallaxImage image="/images/fotoParallax2.jpg" />
 
       <div className="section white">
         <div className="row container center">
@@ -80,47 +82,20 @@ function App() {
         </div>
       </div>
 
-      <ParallaxImage image="http://materializecss.com/images/parallax2.jpg" />
+      <ParallaxImage image="/images/fotoParallax3.jpg" />
+
+      <ToastSection1 />
 
       <div className="section white">
         <div className="row container center">
-          <h2 className="header center">Q&A</h2>
-          <Row>
-            <Col s={4}>
-              <h4 className="header">
-                Cuanto te amo ?
-                <ToastComponent
-                  className="center"
-                  toastButtonText="Respuesta aqui."
-                  toastMessageText="MUCHISISISISISIMOOOO ASI MUCHO MUCHO MUCHO MUCHO MUCHO MUCHOMUCHO MUCHO MUCHOMUCHO MUCHO MUCHOMUCHO MUCHO MUCHOMUCHO MUCHO MUCHO AAAAAH ME ENCANTAAAAAAAS"
-                />
-              </h4>
-            </Col>
-            <Col s={4}>
-              <h4 className="header">
-                Te extraño ?
-                <ToastComponent
-                  className="center"
-                  toastButtonText="Respuesta aqui."
-                  toastMessageText=":( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( SIIIIIIII :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :("
-                />
-              </h4>
-            </Col>
-            <Col s={4}>
-              <h4 className="header">
-                Dime algo bonito
-                <ToastComponent
-                  className="center"
-                  toastButtonText="Respuesta aqui."
-                  toastMessageText="TE VEZ GUAPISIMAAAA, NO IMPORTA CUANDO LEAS ESTO :)"
-                />
-              </h4>
-            </Col>
-          </Row>
+          <h4 className="removeMarginBottom">
+            {'Algunas de nuestros hermosos recuerdos <3'}
+          </h4>
+          <CarouselComponent />
         </div>
       </div>
 
-      <CarouselComponent />
+      <FooterComponent />
     </div>
   );
 }
